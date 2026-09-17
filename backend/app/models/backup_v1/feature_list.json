@@ -1,0 +1,16 @@
+{
+  "feature_names": [
+    "lower_leg_acc_mag_mean",
+    "lower_leg_acc_mag_std",
+    "lower_leg_acc_mag_rms",
+    "lower_leg_acc_mag_range",
+    "lower_leg_free_acc_mag_mean",
+    "lower_leg_free_acc_mag_std",
+    "lower_leg_free_acc_mag_rms",
+    "lower_leg_gyr_mag_mean",
+    "lower_leg_gyr_mag_std",
+    "lower_leg_gyr_mag_rms",
+    "lower_leg_gyr_mag_range",
+    "lower_leg_peak_angular_velocity"
+  ]
+}

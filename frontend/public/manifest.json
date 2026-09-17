@@ -1,0 +1,16 @@
+{
+  "name": "OA-SMART Osteoarthritis Screening",
+  "short_name": "OA-SMART",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0284c7",
+  "description": "Portable AI-Assisted Osteoarthritis Risk Screening System",
+  "icons": [
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

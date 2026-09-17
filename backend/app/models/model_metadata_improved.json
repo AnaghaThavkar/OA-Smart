@@ -1,0 +1,78 @@
+{
+  "model_name": "OA-SMART Improved Random Forest (12 Sensors + Demographics)",
+  "model_architecture": "RandomForestClassifier(n_estimators=100, max_depth=5, class_weight=\"balanced\")",
+  "num_features": 15,
+  "feature_names": [
+    "lower_leg_acc_mag_mean",
+    "lower_leg_acc_mag_std",
+    "lower_leg_acc_mag_rms",
+    "lower_leg_acc_mag_range",
+    "lower_leg_free_acc_mag_mean",
+    "lower_leg_free_acc_mag_std",
+    "lower_leg_free_acc_mag_rms",
+    "lower_leg_gyr_mag_mean",
+    "lower_leg_gyr_mag_std",
+    "lower_leg_gyr_mag_rms",
+    "lower_leg_gyr_mag_range",
+    "lower_leg_peak_angular_velocity",
+    "Age",
+    "Sex_encoded",
+    "BMI"
+  ],
+  "operating_decision_threshold": 0.3,
+  "threshold_calibration_method": "Youden Index on 5-Fold Stratified Group CV (Training Cohort Only)",
+  "metrics_test_trial_level": {
+    "Accuracy": 0.8958333333333334,
+    "Balanced Accuracy": 0.902802730865972,
+    "Sensitivity": 0.9130434782608695,
+    "Specificity": 0.8925619834710744,
+    "Precision": 0.6176470588235294,
+    "F1": 0.7368421052631579,
+    "ROC-AUC": 0.965504850880345,
+    "TP": 21,
+    "TN": 108,
+    "FP": 13,
+    "FN": 2,
+    "Confusion Matrix": [
+      [
+        108,
+        13
+      ],
+      [
+        2,
+        21
+      ]
+    ]
+  },
+  "metrics_test_subject_level": {
+    "Accuracy": 0.8709677419354839,
+    "Balanced Accuracy": 0.9199999999999999,
+    "Sensitivity": 1.0,
+    "Specificity": 0.84,
+    "Precision": 0.6,
+    "F1": 0.75,
+    "ROC-AUC": 0.9733333333333333,
+    "TP": 6,
+    "TN": 21,
+    "FP": 4,
+    "FN": 0,
+    "Confusion Matrix": [
+      [
+        21,
+        4
+      ],
+      [
+        0,
+        6
+      ]
+    ]
+  },
+  "comparison_with_v1": {
+    "v1_trial_bal_acc": 0.8634567014013654,
+    "v1_trial_sens": 0.8260869565217391,
+    "v1_trial_spec": 0.9008264462809917,
+    "improved_trial_bal_acc": 0.902802730865972,
+    "improved_trial_sens": 0.9130434782608695,
+    "improved_trial_spec": 0.8925619834710744
+  }
+}
